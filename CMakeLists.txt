@@ -7,4 +7,4 @@ INCLUDE_DIRECTORIES(
     include
 )
 # add the executable
-add_executable(ch2 src/ch2.cpp)
+add_executable(ch3 src/ch3.cpp)
