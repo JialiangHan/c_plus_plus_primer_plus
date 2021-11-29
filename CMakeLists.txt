@@ -1,8 +1,8 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.5)
 
 # set the project name
 project(c_plus_plus_primer_plus)
-
+set(CMAKE_CXX_STANDARD 11)
 INCLUDE_DIRECTORIES(
     include
 )
