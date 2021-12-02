@@ -112,25 +112,25 @@ void ch3::exercise_7::Output()
     std::cout << "mile per gallon is " << mile_per_gallon_ << std::endl;
 }
 
-int main()
-{
-    // ConvertInchesToFeet();
-    // float feet, inches, weight_in_pounds;
-    // std::cout << "Please enter your height in feet";
-    // std::cin >> feet;
-    // std::cout << "Please enter your height in inches";
-    // std::cin >> inches;
-    // std::cout << "Please enter your weight in pounds";
-    // std::cin >> weight_in_pounds;
-    // std::cout << "your BMI is: " << CalculateBMI(ConvertPoundsToKg(weight_in_pounds), ConvertInchesToMeters(ConvertHeightToInches(feet, inches))) << std::endl;
-    // float degrees, minutes, seconds;
-    // std::cout << "Enter a latitude in degrees,minutes, and seconds:" << std::endl;
-    // std::cout << "First, enter the degrees:";
-    // std::cin >> degrees;
-    // std::cout << "Next, enter the minutes of arc:";
-    // std::cin >> minutes;
-    // std::cout << "Finally, enter the seconds of arc:";
-    // std::cin >> seconds;
-    // std::cout << degrees << " degrees, " << minutes << " minutes, " << seconds << " seconds = " << degrees + ConvertMinutesToDegree(minutes + ConvertSecondsToMinutes(seconds)) << " degrees" << std::endl;
-    ch3::exercise_7 ex7;
-}
+// int main()
+// {
+// ConvertInchesToFeet();
+// float feet, inches, weight_in_pounds;
+// std::cout << "Please enter your height in feet";
+// std::cin >> feet;
+// std::cout << "Please enter your height in inches";
+// std::cin >> inches;
+// std::cout << "Please enter your weight in pounds";
+// std::cin >> weight_in_pounds;
+// std::cout << "your BMI is: " << CalculateBMI(ConvertPoundsToKg(weight_in_pounds), ConvertInchesToMeters(ConvertHeightToInches(feet, inches))) << std::endl;
+// float degrees, minutes, seconds;
+// std::cout << "Enter a latitude in degrees,minutes, and seconds:" << std::endl;
+// std::cout << "First, enter the degrees:";
+// std::cin >> degrees;
+// std::cout << "Next, enter the minutes of arc:";
+// std::cin >> minutes;
+// std::cout << "Finally, enter the seconds of arc:";
+// std::cin >> seconds;
+// std::cout << degrees << " degrees, " << minutes << " minutes, " << seconds << " seconds = " << degrees + ConvertMinutesToDegree(minutes + ConvertSecondsToMinutes(seconds)) << " degrees" << std::endl;
+// ch3::exercise_7 ex7;
+// }

@@ -168,10 +168,10 @@ namespace ch4
     }
 }
 
-int main()
-{
-    // ch4::exercise_7 ex7;
-    // ex7.Inital();
-    // ex7.OutputInfo();
-    ch4::exercise_10();
-}
+// int main()
+// {
+//     // ch4::exercise_7 ex7;
+//     // ex7.Inital();
+//     // ex7.OutputInfo();
+//     ch4::exercise_10();
+// }

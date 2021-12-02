@@ -1,3 +1,5 @@
+#ifndef CH3_H
+#define CH3_H
 #include <iostream>
 namespace ch3
 {
@@ -112,3 +114,4 @@ namespace ch3
         const float NumLitersInGallon = 3.875;
     };
 }
+#endif

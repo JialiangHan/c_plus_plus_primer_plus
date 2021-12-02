@@ -57,25 +57,25 @@ void DisplayHoursAndMinutes(const int &hours, const int &minutes)
 {
     std::cout << "Time: " << hours << ":" << minutes << std::endl;
 }
-int main()
-{
-    // Exercise_1("shanghai", "shanghai fengxian");
-    // ConvertFurlongsToYards();
-    // Exercise_3();
-    // ConverAgeToMonth();
-    // std::cout << "Please enter a Celsius value:";
-    // float temp_in_celsius;
-    // std::cin >> temp_in_celsius;
-    // std::cout << temp_in_celsius << " degrees Celsius is " << ConvertCelsiusToFahrenheit(temp_in_celsius) << " degrees Fahrenheit" << std::endl;
-    // std::cout << "Enter the number of light years: ";
-    // float light_years;
-    // std::cin >> light_years;
-    // std::cout << light_years << " light years = " << ConvertLightYearsToAstronomicalUnits(light_years) << " astronomical units" << std::endl;
-    std::cout << "Enter the number of hours: ";
-    float hours;
-    std::cin >> hours;
-    std::cout << "Enter the number of minutes: ";
-    float minutes;
-    std::cin >> minutes;
-    DisplayHoursAndMinutes(hours, minutes);
-}
+// int main()
+// {
+//     // Exercise_1("shanghai", "shanghai fengxian");
+//     // ConvertFurlongsToYards();
+//     // Exercise_3();
+//     // ConverAgeToMonth();
+//     // std::cout << "Please enter a Celsius value:";
+//     // float temp_in_celsius;
+//     // std::cin >> temp_in_celsius;
+//     // std::cout << temp_in_celsius << " degrees Celsius is " << ConvertCelsiusToFahrenheit(temp_in_celsius) << " degrees Fahrenheit" << std::endl;
+//     // std::cout << "Enter the number of light years: ";
+//     // float light_years;
+//     // std::cin >> light_years;
+//     // std::cout << light_years << " light years = " << ConvertLightYearsToAstronomicalUnits(light_years) << " astronomical units" << std::endl;
+//     std::cout << "Enter the number of hours: ";
+//     float hours;
+//     std::cin >> hours;
+//     std::cout << "Enter the number of minutes: ";
+//     float minutes;
+//     std::cin >> minutes;
+//     DisplayHoursAndMinutes(hours, minutes);
+// }
