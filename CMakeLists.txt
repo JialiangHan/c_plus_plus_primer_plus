@@ -19,12 +19,13 @@ INCLUDE_DIRECTORIES(
 
 # add the executable
 add_executable(exercise_test ${ALL_SRC} test/test.cpp)
-
+add_executable(ch5 ${ALL_SRC})
 target_link_libraries(
     exercise_test
     ${GTEST_LIBRARIES}
     gtest_main
     pthread
 )
-
-add_test(My_test exercise_test)
+gtest_add_tests(exercise_test
+                .noArgs
+                AUTO)
