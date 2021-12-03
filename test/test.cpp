@@ -86,3 +86,36 @@ TEST(ch5, exercise_6)
     int actual = ex.GetTotalSales();
     EXPECT_EQ(expected, actual);
 }
+TEST(ch5, exercise_7)
+{
+    //for input: 22 22 22 22 3 3 3 2 -6 -6 -6 1
+    std::string test_input = "2\nHudson Hornet\n1952\nKaiser\n1951\n";
+    int expected = 1951;
+    std::stringstream fake_input(test_input);
+    ch5::exercise_7 ex(fake_input);
+
+    int actual = ex.GetCarList()[0].year_made;
+    EXPECT_EQ(expected, actual);
+}
+TEST(ch5, exercise_8)
+{
+    //for input: 22 22 22 22 3 3 3 2 -6 -6 -6 1
+    std::string test_input = "2\nHudson Hornet\n1952\nKaiser\n1951\n123\n1235\ndone\n";
+    int expected = 7;
+    std::stringstream fake_input(test_input);
+    ch5::exercise_8 ex(fake_input);
+
+    int actual = ex.GetWordsCount();
+    EXPECT_EQ(expected, actual);
+}
+TEST(ch5, exercise_9)
+{
+    //for input: 22 22 22 22 3 3 3 2 -6 -6 -6 1
+    std::string test_input = "2\nHudson Hornet\n1952\nKaiser\n1951\n123\n1235\ndone\n";
+    int expected = 7;
+    std::stringstream fake_input(test_input);
+    ch5::exercise_9 ex(fake_input);
+
+    int actual = ex.GetWordsCount();
+    EXPECT_EQ(expected, actual);
+}

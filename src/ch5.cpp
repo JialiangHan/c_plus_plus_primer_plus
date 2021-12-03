@@ -1,6 +1,6 @@
 #include "ch5.h"
 #include <string>
-
+#include <cstring>
 void ch5::exercise_1::Initial()
 {
     std::cout << "Please enter the small number: " << std::endl;
@@ -117,21 +117,71 @@ void ch5::exercise_6::DoExercise(std::istream &std_input)
     total_sales_ = first_year_sales_ + second_year_sales_ + third_year_sales_;
 }
 
+void ch5::exercise_7::DoExercise(std::istream &std_input)
+{
+    std::cout << "How many cars do you wish to catalog? \n";
+    std_input >> numbers_;
+    for (uint i = 0; i < numbers_; ++i)
+    {
+        std::cout << "Car #" << i << ".\n";
+        std::cout << "Please enter the make:\n";
+        std_input >> car_list_[i].make;
+        std::cout << "Please enter the year made:\n";
+        std_input >> car_list_[i].year_made;
+    }
+    std::cout << "Here is your collection:\n";
+    for (uint i = 0; i < numbers_; ++i)
+    {
+        std::cout << car_list_[i].year_made << " " << car_list_[i].make << "\n";
+    }
+}
+
+void ch5::exercise_8::DoExercise(std::istream &std_input)
+{
+    std::cout << "Enter words (to stop, type the word done): \n";
+    std_input >> words_list_;
+    while (strcmp(words_list_, "done"))
+    {
+        counts_++;
+        std_input >> words_list_;
+    }
+    std::cout << "You entered a total of " << counts_ << " words.\n";
+}
+void ch5::exercise_9::DoExercise(std::istream &std_input)
+{
+    std::cout << "Enter words (to stop, type the word done): \n";
+    std_input >> word;
+    while (word.compare("done"))
+    {
+        counts_++;
+        std_input >> word;
+    }
+    std::cout << "You entered a total of " << counts_ << " words.\n";
+}
+void ch5::exercise_10::DoExercise(std::istream &std_input)
+{
+    std::cout << "Enter the number of lines: \n";
+    std_input >> number_of_lines;
+    for (int i = 0; i < number_of_lines; ++i)
+    {
+        for (int a = 0; a < number_of_lines - i - 1; ++a)
+        {
+            std::cout << ".";
+        }
+        for (int b = 0; b < i + 1; ++b)
+        {
+            std::cout << "*";
+        }
+        std::cout << "\n";
+    }
+}
 int main()
 {
 
-    std::string test_input = "22\n22\n22\n22\n3\n3\n3\n2\n-6\n-6\n-6\n1\n22\n22\n22\n22\n3\n3\n3\n2\n-6\n-6\n-6\n1\n22\n22\n22\n22\n3\n3\n3\n2\n-6\n-6\n-6\n1\n";
-    int expected = 0;
-    std::stringstream fake_input(test_input);
-    std::string segment;
+    std::string test_input = "5\n";
 
-    while (std::getline(fake_input, segment))
-    {
-        expected += std::stoi(segment);
-        std::cout << "expected: " << expected << std::endl;
-    }
     std::stringstream fake_input_1(test_input);
-    ch5::exercise_6 ex(fake_input_1);
-    std::cout << "result: " << ex.GetTotalSales() << "\n.";
+    ch5::exercise_10 ex(fake_input_1);
+
     return 0;
 }

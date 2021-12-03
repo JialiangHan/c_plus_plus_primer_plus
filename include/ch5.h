@@ -143,19 +143,70 @@ namespace ch5
 
             DoExercise(std_input);
         };
-        ~exercise_7
+        ~exercise_7()
         {
-            delete[] car_list_ptr_;
+            delete[] car_list_;
         };
         void DoExercise(std::istream &std_input);
         car *GetCarList()
         {
-            return car_list_ptr_;
+            return car_list_;
         };
 
     private:
         int numbers_;
-        car *car_list_ptr_ = new car[numbers];
+        car *car_list_ = new car[numbers_];
+    };
+    class exercise_8
+    {
+    public:
+        exercise_8(std::istream &std_input)
+        {
+
+            DoExercise(std_input);
+        };
+        ~exercise_8(){};
+        void DoExercise(std::istream &std_input);
+        int GetWordsCount()
+        {
+            return counts_;
+        };
+
+    private:
+        int counts_ = 0;
+        char words_list_[20];
+    };
+    class exercise_9
+    {
+    public:
+        exercise_9(std::istream &std_input)
+        {
+
+            DoExercise(std_input);
+        };
+        ~exercise_9(){};
+        void DoExercise(std::istream &std_input);
+        int GetWordsCount()
+        {
+            return counts_;
+        };
+
+    private:
+        int counts_ = 0;
+        std::string word;
+    };
+    class exercise_10
+    {
+    public:
+        exercise_10(std::istream &std_input)
+        {
+            DoExercise(std_input);
+        };
+        ~exercise_10(){};
+        void DoExercise(std::istream &std_input);
+
+    private:
+        int number_of_lines = 0;
     };
 }
 
