@@ -9,14 +9,14 @@ TEST(ch5, exercise_1)
     EXPECT_EQ(ex1.result_, 44);
 }
 
-// TEST(ch5, exercise_2)
-// {
-//     ch5::exercise_2 ex;
-//     EXPECT_EQ(ex.factorials[0], 1);
-//     EXPECT_EQ(ex.factorials[1], 1);
-//     EXPECT_EQ(ex.factorials[6], 720);
-//     EXPECT_EQ(ex.factorials[14], 87178291200);
-// }
+TEST(ch5, exercise_2)
+{
+    ch5::exercise_2 ex;
+    EXPECT_EQ(ex.factorials_[0], 1);
+    EXPECT_EQ(ex.factorials_[1], 1);
+    EXPECT_EQ(ex.factorials_[6], 720);
+    EXPECT_EQ(ex.factorials_[14], 87178291200);
+}
 
 TEST(ch5, exercise_3)
 {

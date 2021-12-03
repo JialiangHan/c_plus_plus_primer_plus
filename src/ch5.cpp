@@ -27,20 +27,20 @@ void ch5::exercise_1::Output()
     std::cout << "ch5 exercise_1 result is: " << result_ << std::endl;
 }
 
-// void ch5::exercise_2::DoExercise()
-// {
-//     factorials_[0] = factorials_[1] = 1.0L;
-//     for (int i = 2; i < factorials_.size(); ++i)
-//     {
-//         factorials_[i] = factorials_[i - 1] * i;
-//     }
-// }
+void ch5::exercise_2::DoExercise()
+{
+    factorials_[0] = factorials_[1] = 1.0L;
+    for (int i = 2; i < factorials_.size(); ++i)
+    {
+        factorials_[i] = factorials_[i - 1] * i;
+    }
+}
 
-// void ch5::exercise_2::Output()
-// {
-//     for (int i = 0; i < 100; i++)
-//         std::cout << i << "! = " << factorials_[i] << std::endl;
-// }
+void ch5::exercise_2::Output()
+{
+    for (int i = 0; i < 100; i++)
+        std::cout << i << "! = " << factorials_[i] << std::endl;
+}
 
 void ch5::exercise_3::DoExercise()
 {

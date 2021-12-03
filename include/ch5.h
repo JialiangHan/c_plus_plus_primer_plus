@@ -24,19 +24,19 @@ namespace ch5
         int small_;
         int big_;
     };
-    // class exercise_2
-    // {
-    // public:
-    //     exercise_2()
-    //     {
-    //         DoExercise();
-    //         Output();
-    //     };
-    //     void DoExercise();
-    //     void Output();
+    class exercise_2
+    {
+    public:
+        exercise_2()
+        {
+            DoExercise();
+            Output();
+        };
+        void DoExercise();
+        void Output();
 
-    //     std::array<long double, 100> factorials_{};
-    // };
+        std::array<long double, 100> factorials_{};
+    };
     class exercise_3
     {
     public:
