@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "ch5.h"
+#include "ch6.h"
 #include <string>
 #include <iostream>
 #include <sstream>
@@ -119,3 +119,13 @@
 //     int actual = ex.GetWordsCount();
 //     EXPECT_EQ(expected, actual);
 // }
+
+TEST(ch6, exercise_1)
+{
+    std::string test_input = "2\nH\nu\n";
+    char output_1 = 'h';
+    char output_2 = 'U';
+    std::stringstream fake_input(test_input);
+    ch6::exercise_1 ex(fake_input);
+    EXPECT_EQ(output_2, ex.OutputChar());
+}
